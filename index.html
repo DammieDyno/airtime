@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../Airtime generator/airtime.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Airtime</title>
+</head>
+
+<body>
+    <main>
+        <div class="body">
+        <div class="dough">
+            <h2 class="air">Load your Airtime</h2>
+            <div class="move">
+                <select name="" id="select">
+                    <option value="">Network</option>
+                    <option value="MTN">MTN</option>
+                    <option value="GLO">GLO</option>
+                    <option value="AIRTEL">AIRTEL</option>
+                    <option value="9MOBILE">9MOBILE</option>
+                </select>
+                <select name="" id="selectt">
+                    <option value="">Amount</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                </select>
+                <button onclick="generate()">Generate pin</button>
+                <h1 id="show"></h1>
+                <div class="d-flex">
+                    <input type="text" id="enter" placeholder="Enter your pin">
+                <button onclick="load()">Load Airtime</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
+<script src="script.js"></script>
