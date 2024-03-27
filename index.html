@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../Airtime generator/airtime.png">
+    <script src="https://kit.fontawesome.com/9fd086769b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Airtime</title>
 </head>
@@ -29,13 +30,24 @@
                     <option value="500">500</option>
                     <option value="1000">1000</option>
                 </select>
-                <button onclick="generate()">Generate pin</button>
+                <button id="generate" onclick="generate()">Generate pin</button>
                 <h1 id="show"></h1>
                 <div class="d-flex">
                     <input type="text" id="enter" placeholder="Enter your pin">
-                <button onclick="load()">Load Airtime</button>
+                <button id="foot" onclick="load()">Load Airtime</button>
                 </div>
             </div>
+            <table>
+                    <thead id="tabhead">
+                        <th>Generate pin</th>
+                        <th>Network</th>
+                        <th>Amount</th>
+                        <th>Date&Time</th>
+                    </thead>
+                    <tbody id="showDesk">
+
+                    </tbody>
+                </table>
         </div>
         </div>
     </main>
